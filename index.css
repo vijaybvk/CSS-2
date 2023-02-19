@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+
+h2,h1{
+    color: #ffff;
+}
+
+.container {
+    padding: 20px;
+    height: 100%;
+    background: black;
+}
+
+.head {
+    height: 10vh;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid #808080;
+}
+
+.parent {
+    height: 85vh;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.cont-1 {
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-2 {
+    float: right;
+    height: 100%;
+    width: 69%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid #808080;
+    padding: 20px 10px;
+    line-height: 2em;
+    /* text-align: center; */
+}
+
+.cont-2 h1{
+    padding-left: 50px;
+    font-size: 100%;
+}
+
+table{
+    border: 1px solid #808080;
+    height: 65vh;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+table,tr,th,td{
+    color: #808080;
+}
+
+.child-1 {
+    height: 35vh;
+    box-sizing: border-box;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.child-1 img {
+    width: 100px;
+    border-radius: 100px;
+    margin: 10px 0;
+}
+
+.child-2 {
+    height: 40vh;
+    box-sizing: border-box;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding:10px 0 0  30px;
+    line-height: 1.8em;
+}
+
+.child-3 {
+    height: 30vh;
+    box-sizing: border-box;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    padding:10px 0 0  30px;
+    line-height: 1.5em;
+}
+
+.child-3 ul {
+    list-style-type: none;
+}
+
+.child-2 ul li{
+    color: #ffff;
+}
+
+li,.material-icons{
+    color: #808080;
+    display: flex;
+    line-height: 1.8em;
+}
+
+span{
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        display: flex;
+        padding: 20px 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .head {
+        width: 250px;
+        margin: 0 auto 10px;
+        font-size: 70%;
+        text-align: center;
+
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .cont-1 {
+        width: 250px;
+    }
+
+    .child-1,
+    .child-2,
+    .child-3 {
+        width: 250px;
+        margin: 0 auto 10px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .cont-2{
+        width: 250px;
+        font-size: 45%;
+    }
+
+    table{
+        width: 100%;
+
+    }
+
+}
